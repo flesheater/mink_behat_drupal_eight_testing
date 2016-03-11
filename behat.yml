@@ -1,0 +1,22 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      base_url: http://local_url_of_your.site
+    Drupal\DrupalExtension:
+      blackbox: ~
+      api_driver: "drupal"
+      region_map:
+        left sidebar: "#sidebar-first"
+        content: "#content"
+      drupal:
+        drupal_root: /local/path/of/your/site
