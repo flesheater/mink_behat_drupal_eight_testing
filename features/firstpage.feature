@@ -1,6 +1,6 @@
  #features/firstpage.feature
 @api
-Feature: Rolls Royce Testing
+Feature: Drupal 8 Testing
   As logged in user, or as not logged in
 
   Scenario: Not logged in user
