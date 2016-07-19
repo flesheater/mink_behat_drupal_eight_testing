@@ -5,5 +5,8 @@
 3. Install the dependancies
  composer install
 
+3.5 In case you want to use phantomjs for testing js - you have to have it installed and running:
+ phantomjs --webdriver=8643
+
 4. Run the tests
  bin/behat
